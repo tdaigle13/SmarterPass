@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<style>
+		.popupContainerDiv{
+			width: 400px;
+			height: 200px;
+		}
+		</style>
+	
+	</head>
+	<body>
+		<div class="popupContainerDiv">
+		<div align="right" style="color:#0000FF">
+		   <text><u>Sign Up</u> | <u>Login</u><text></center-right>
+		</div>
+		<h3><center>SmarterPass</center></h3>
+		<form name = myform>
+		   <center>Potential Password: <input type="password" id='pword' >&nbsp; <input type="checkbox" onclick="myFunction()">Show Password
+		   <center><button type="button">Basic Check</button></center>
+		   <center><button type="button">Advanced Check</button></center>
+		</form>
+		</div>
+		<script>
+		function myFunction() {
+			var x = document.getElementById("pword");
+			if (x.type === "password") {
+				x.type = "text";
+			} else {
+				x.type = "password";
+			}
+		}
+		</script>
+	</body>
+</html>
